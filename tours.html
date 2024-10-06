@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Bangladesh</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f6f6f6, #d8d8d8);
+            margin: 0;
+            padding: 0;
+            transition: background 0.5s ease;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            color: #2e8b57;
+            text-align: center;
+            margin: 20px 0;
+            text-transform: uppercase;
+            font-size: 3em;
+            animation: slideIn 0.5s ease-in-out;
+        }
+
+        h3 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 1.8em;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        p {
+            margin: 20px;
+            line-height: 1.8;
+            text-align: justify;
+            font-size: 1.1em;
+            color: #333;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.5s;
+        }
+
+        /* Header Box */
+        .box {
+            width: 50%;
+            max-width: 500px;
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin: 20px auto;
+            transform: scale(1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: bounce 1s infinite alternate;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .box button {
+            background-color: #ffffff;
+            color: #007bff;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background-color: #007bff;
+            transform: translateX(-100%) scaleY(0);
+            transition: transform 0.4s ease;
+            z-index: 0;
+        }
+
+        .box button:hover::before {
+            transform: translateX(0) scaleY(1);
+        }
+
+        .box button:hover {
+            color: white;
+        }
+
+        /* Images with Hover Effect */
+        img {
+            height: 150px;
+            width: auto;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Fade-in Animation */
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Slide-in Animation */
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Bounce Animation for Header Box */
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Scroll to Top Button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .scroll-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin: 40px 0;
+            color: #666;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="box fade-in">
+        <h3>Tour Bangladesh</h3>
+        <div>
+            <a href="index2.html"><button>Home</button></a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <h1 class="fade-in">পঞ্চগড়</h1>
+    <h3>পঞ্চগড় জেলা</h3>
+    <p class="fade-in">বাংলাদেশের উত্তর-পশ্চিমাঞ্চলের রংপুর বিভাগের একটি প্রশাসনিক অঞ্চল। এটি বাংলাদেশের সবচেয়ে উত্তরের জেলা। এই জেলা থেকেই বহুল আলোচিত হিমালয়ের কাঞ্চনজঙ্ঘা চূড়া দেখতে পাওয়া যায়।</p>
+
+    <h3>অবস্থান ও আয়তন</h3>
+    <p class="fade-in">পঞ্চগড় জেলার আয়তন প্রায় ১,৪০৪.৬২ বর্গ কি.মি. বা ৫৪২.৩৩ বর্গমাইল। এটি ভারতের পশ্চিমবঙ্গের সীমান্তের কাছাকাছি অবস্থিত, উত্তরে ভারতের পশ্চিমবঙ্গ, দক্ষিণে দিনাজপুর ও ঠাকুরগাঁও, পূর্বে নীলফামারী, পশ্চিমে আবার ভারতের পশ্চিমবঙ্গ।</p>
+
+    <h3>নামকরণ</h3>
+    <p class="fade-in">কেউ কেউ মনে করে থাকেন যে, প্রাচীনকালে পুণ্ড্রবর্ধন রাজ্যের অর্ন্তগত ‘পঞ্চনগরী’ নামে একটি অঞ্চল ছিল। কালক্রমে পঞ্চনগরী ‘পঞ্চগড়’ নামে আত্মপ্রকাশ করে।</p>
+
+    <h3>ভারত বিভাগ ও আধুনিক যুগ</h3>
+    <p class="fade-in">১৯১১ সালে পঞ্চগড় জেলা একটি পূর্ণাঙ্গ থানা হিসাবে আত্মপ্রকাশ করে এবং ১৯৮৪ সালে এটি একটি জেলায় উন্নীত হয়। পঞ্চগড়ে রয়েছে বিভিন্ন সাংস্কৃতিক ও ঐতিহাসিক স্থান, যেমন ভিতরগড় দূর্গ এবং বরদেশ্বরী মন্দির।</p>
+
+    <h3>চা বাগান</h3>
+    <p class="fade-in">পঞ্চগড় জেলার অর্থনৈতিক উন্নয়নে নতুনভাবে যোগ হয়েছে চা চাষ। এখানকার চা বাগানগুলো বিশেষভাবে পরিচিত এবং দেশের চা শিল্পে একটি গুরুত্বপূর্ণ ভূমিকা পালন করছে।</p>
+
+    <h3>চিত্তাকর্ষক স্থান</h3>
+    <p class="fade-in">জেলায় সরকারি ও বেসরকারি উদ্যোগে গড়ে উঠেছে বেশ কিছু স্থান, যেমন জেলা শিল্পকলা একাডেমি, হিমালয় পার্ক, ডি.সি পার্ক ইত্যাদি।</p>
+
+    <h3>দর্শনীয় স্থানসমূহ</h3>
+    <ul style="list-style-type: none; padding: 0;" class="fade-in">
+        <li>১. ভিতরগড় দূর্গ</li>
+        <li>২. মহারাজার দিঘী</li>
+        <li>৩. কাজল দিঘী</li>
+        <li>৪. বরদেশ্বরী মন্দির</li>
+        <li>৫. চা বাগান</li>
+    </ul>
+
+    <!-- Image Section -->
+    <div style="text-align: center;" class="fade-in">
+        <img src="https://example.com/image1.jpg" alt="Image 1">
+        <img src="https://example.com/image2.jpg" alt="Image 2">
+        <img src="https://example.com/image3.jpg" alt="Image 3">
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTopBtn">Back to Top</button>
+
+    <div class="footer fade-in">
+        <p>© 2024 Tour Bangladesh. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        // Smooth Scrolling for Internal Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll to Top Button Functionality
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
